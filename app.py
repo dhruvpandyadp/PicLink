@@ -25,7 +25,7 @@ if uploaded_file is not None:
         st.subheader("📸 Image Preview")
         # Display the uploaded image
         image = Image.open(uploaded_file)
-        st.image(image, use_column_width=True)
+        st.image(image, use_container_width=True)
         
         # Show image details
         st.caption(f"**Filename:** {uploaded_file.name}")
